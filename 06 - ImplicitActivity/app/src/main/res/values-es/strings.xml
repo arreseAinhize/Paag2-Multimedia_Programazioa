@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_text">Introduzca el texto</string>
+    <string name="btnWebsite">ABRIR EL SITIO WEB</string>
+    <string name="btnLocation">ABRIR LA UBICACIÓN</string>
+    <string name="btnSheraText">COMPARTIR ESTE TEXTO</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="enter_text">Idatzi testua</string>
+    <string name="btnWebsite">WEBGUNE IREKIA</string>
+    <string name="btnLocation">KOKALEKU IREKIA</string>
+    <string name="btnSheraText">PARTEKATU TESTU HAU</string>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MulticounterV3_Notifications&amp;Alerts</string>
+    <string name="SumBtn" translatable="false">+1</string>
+    <string name="RestBtn">RESET</string>
+    <string name="RestAllBtn">RESET ALL</string>
+    <string name="SumTxt" translatable="false">0</string>
+</resources>

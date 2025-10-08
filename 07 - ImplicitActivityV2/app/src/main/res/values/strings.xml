@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ImplicitActivityV2</string>
+    <string name="enter_text">Enter text</string>
+    <string name="btnWebsite">OPEN WEBSITE</string>
+    <string name="btnLocation">OPEN LOCATION</string>
+    <string name="btnSheraText">SHARE THIS TEXT</string>
+    <string name="btnPhoto">TAKE A PHOTO</string>
+
+</resources>

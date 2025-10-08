@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnRestAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:text="@string/RestAllBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSumTot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtSumTot"
+        app:layout_constraintTop_toTopOf="@+id/txtSumTot"
+        app:layout_constraintVertical_bias="0.517" />
+
+    <TextView
+        android:id="@+id/txtSumTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="@string/SumTxt"
+        app:layout_constraintEnd_toStartOf="@+id/btnRestAll"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/SumBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount1"
+        app:layout_constraintEnd_toStartOf="@+id/txtCount1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCount1"
+        app:layout_constraintVertical_bias="0.482" />
+
+    <Button
+        android:id="@+id/btnRest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/RestBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount1"
+        app:layout_constraintEnd_toStartOf="@+id/btnSum2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCount1"
+        app:layout_constraintTop_toTopOf="@+id/btnSum2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnSum4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/SumBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount4"
+        app:layout_constraintEnd_toStartOf="@+id/txtCount4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRest3"
+        app:layout_constraintTop_toTopOf="@+id/txtCount4"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/txtCount3"
+        android:layout_width="8dp"
+        android:layout_height="28dp"
+        android:text="@string/SumTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRest3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSum3"
+        app:layout_constraintTop_toBottomOf="@+id/txtCount1" />
+
+    <TextView
+        android:id="@+id/txtCount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:text="@string/SumTxt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnRest4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSum4" />
+
+    <Button
+        android:id="@+id/btnSum3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/SumBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount3"
+        app:layout_constraintEnd_toStartOf="@+id/txtCount3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtCount3"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btnRest3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/RestBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount3"
+        app:layout_constraintEnd_toStartOf="@+id/btnSum4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCount3"
+        app:layout_constraintTop_toTopOf="@+id/btnSum4" />
+
+    <TextView
+        android:id="@+id/txtCount1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SumTxt"
+        app:layout_constraintBottom_toTopOf="@+id/txtCount3"
+        app:layout_constraintEnd_toStartOf="@+id/btnRest1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSum1"
+        app:layout_constraintTop_toBottomOf="@+id/txtSumTot" />
+
+    <Button
+        android:id="@+id/btnSum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue"
+        android:text="@string/SumBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount2"
+        app:layout_constraintEnd_toStartOf="@+id/txtCount2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRest1"
+        app:layout_constraintTop_toTopOf="@+id/txtCount2"
+        app:layout_constraintVertical_bias="0.379" />
+
+    <Button
+        android:id="@+id/btnRest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/RestBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCount2"
+        app:layout_constraintTop_toTopOf="@+id/txtCount2" />
+
+    <TextView
+        android:id="@+id/txtCount2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/SumTxt"
+        app:layout_constraintBottom_toBottomOf="@+id/txtCount1"
+        app:layout_constraintEnd_toStartOf="@+id/btnRest2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSum2" />
+
+    <Button
+        android:id="@+id/btnRest4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/yellow"
+        android:text="@string/RestBtn"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSum4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtCount4"
+        app:layout_constraintTop_toTopOf="@+id/txtCount4"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

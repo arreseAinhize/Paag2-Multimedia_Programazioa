@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">P1 MultiCounter</string>
+    <string name="SumBtn">+1</string>
+    <string name="RestBtn">RESET</string>
+    <string name="RestAllBtn">RESET ALL</string>
+    <string name="SumTxt">0</string>
+
+
+</resources>

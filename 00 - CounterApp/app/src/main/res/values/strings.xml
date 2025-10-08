@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CounterApp</string>
+    <string name="btn1text">Balioa handitu</string>
+    <string name="textContador"> aldiz klick egin duzu!</string>
+    <string name="textContadorUniversal">%1$d aldiz egin duzu klik!</string>
+</resources>

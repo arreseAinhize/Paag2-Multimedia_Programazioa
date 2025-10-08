@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SeconActivityV2</string>
+    <string name="MsgReceived">Message Received</string>
+    <string name="tvReceived">Message Received</string>
+    <string name="btnSend">SEND</string>
+    <string name="btnReply">REPLY</string>
+    <string name="textSend">Enter your message here</string>
+    <string name="etReply">Enter your message here</string>
+
+</resources>
