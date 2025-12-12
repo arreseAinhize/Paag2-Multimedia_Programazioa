@@ -11,6 +11,19 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/**
+ * Egindako aldaketak:
+ *
+ * 1.- Cambiar "MutableLiveData<OnePiece> a MutableLiveData<OnePiece.Content> en la clase
+ *
+ * 2.- Ajustar el metodo "search" para manejar "Call<OnePiece.Content>".
+ *
+ * 3.- Agregar un bloque de try-catch para "NumberFormatException" al parsear el texto del
+ * SearchView.
+ *
+ * 4.- Agregar una verificación "if (s != null && !s.isEmpty())" en "onQueryTextChange"
+ * para evitar errores al buscar.
+ */
 public class OnePieceViewModel extends AndroidViewModel {
     MutableLiveData<OnePiece.Content> responseMutableLiveData = new MutableLiveData<>();
 

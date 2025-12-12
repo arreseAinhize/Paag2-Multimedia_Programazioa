@@ -22,6 +22,23 @@ import java.util.List;
 import eus.ainhizearrese.retrofitonepiece.databinding.FragmentOnePieceBinding;
 import eus.ainhizearrese.retrofitonepiece.databinding.ViewholderContentBinding;
 
+/**
+ * Egindako aldaketak:
+ *
+ * 1.- Actualizar el "Observer" para observar "OnePiece.Content"
+ *
+ * 2.- Modificar la logica de "onChange"
+ *          *como ahora recibimos un solo objeto Content (o null),
+ *          lo envolvemos en una lista (Collections.singletonList(content))
+ *          para pasárselo al ContentsAdapter, que espera una lista.
+ *
+ * 3.- Ajusté la llamada a onepieceViewModel.search(s) para que solo se
+ * haga si la cadena no está vacía.Ahora la aplicación debería ser capaz
+ * de buscar una fruta por su ID numérico (ej. "1", "2") y mostrar el
+ * resultado en el RecyclerView.
+ *
+ */
+
 public class OnePieceFragment extends Fragment {
     private FragmentOnePieceBinding binding;
 

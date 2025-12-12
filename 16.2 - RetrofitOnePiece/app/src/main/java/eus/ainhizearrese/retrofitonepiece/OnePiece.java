@@ -9,6 +9,17 @@ import retrofit2.http.GET;
 import retrofit2.http.Path;
 import retrofit2.http.Query;
 
+/**
+ * Egindako aldaketak:
+ *
+ * 1.- Eliminar la clase "Renpose" porque la api devuelve directamente el objeto de la fruta,
+ * y no una lista de resultados envuelta.
+ *
+ * 2.- Convertia "Content" en "static" para poder usarla fuera de la clase si fuera necesario.
+ *
+ * 3.- Actualizar la interfaz "API" para que el metodo "search" devuelva un objeto
+ * de la clase "Content".
+ */
 public class OnePiece {
     // 1. Class to map the JSON (Response)
     class Response{
