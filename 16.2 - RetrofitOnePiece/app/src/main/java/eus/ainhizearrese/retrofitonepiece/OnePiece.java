@@ -16,7 +16,7 @@ public class OnePiece {
     }
 
     // 1. Class to map the JSON (Content)
-    class Content{
+    static class Content{
         int id;
         String name;
         String description;
@@ -28,7 +28,7 @@ public class OnePiece {
 
     public interface Api {
         @GET("fruits/en/{id}")
-        Call<Response> search(@Path("id") int text);
+        Call<Content> search(@Path("id") int id);
     }
 
     public static Api api = new Retrofit.Builder()

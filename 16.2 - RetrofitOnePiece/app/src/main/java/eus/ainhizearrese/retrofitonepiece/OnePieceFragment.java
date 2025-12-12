@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.util.Collections;
 import java.util.List;
 
 import eus.ainhizearrese.retrofitonepiece.databinding.FragmentOnePieceBinding;
@@ -45,23 +46,25 @@ public class OnePieceFragment extends Fragment {
 
             @Override
             public boolean onQueryTextChange(String s) {
-                onepieceViewModel.search(s);
+                if (s != null && !s.isEmpty()) {
+                    onepieceViewModel.search(s);
+                }
                 return false;
             }
         });
         ContentsAdapter contentsAdapter = new ContentsAdapter();
         binding.recyclerviewContents.setAdapter(contentsAdapter);
 
-        onepieceViewModel.responseMutableLiveData.observe(getViewLifecycleOwner(), new Observer<OnePiece.Response>() {
+        onepieceViewModel.responseMutableLiveData.observe(getViewLifecycleOwner(), new Observer<OnePiece.Content>() {
             @Override
-            public void onChanged(OnePiece.Response response) {
+            public void onChanged(OnePiece.Content content) {
                 // to control the null pointer on results
-                if (response != null && response.results != null) {
-                    for (OnePiece.Content content : response.results) {
-                        Log.d("ApiReplay", content.name + ", " + content.description + ", " + content.type + ", " + content.filename);
-                    }
+                if (content != null) {
+                    Log.d("ApiReplay", content.name + ", " + content.description + ", " + content.type + ", " + content.filename);
+                    contentsAdapter.establishContentList(Collections.singletonList(content));
                 } else {
                     Log.d("ApiReplay", "No results found");
+                    contentsAdapter.establishContentList(Collections.emptyList());
                 }
             }
         });
