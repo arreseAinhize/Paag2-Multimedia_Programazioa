@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433403411260",
+    "project_id": "multimedia-firebasev1-68647",
+    "storage_bucket": "multimedia-firebasev1-68647.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433403411260:android:937cb7f351d4624876bc39",
+        "android_client_info": {
+          "package_name": "eus.ainhizearrese.firebaseprobak"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC6D2LHP4tJ8_u6dac1aMLhNbOmrmEpSY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

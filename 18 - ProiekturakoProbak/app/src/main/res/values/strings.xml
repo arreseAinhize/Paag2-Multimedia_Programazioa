@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ProiekturakoProbak</string>
+    <string name="book_title_label">Title</string>
+    <string name="book_author_label">Author</string>
+    <string name="book_lecture_data_label">Lecture data</string>
+    <string name="search_book_label">Choise</string>
+    <string name="search_book_title1">SEARCH THE</string>
+    <string name="search_book_title2">NEW BOOK</string>
+    <string name="hint_search_book_titel">Input the book title</string>
+    <string name="login_with_google">Log in with Google</string>
+    <string name="lonig">Log in"</string>
+    <string name="singup">Sing up</string>
+    <string name="welcome">WELCOME</string>
+    <string name="title">READING JOURNAL</string>
+
+
+</resources>
