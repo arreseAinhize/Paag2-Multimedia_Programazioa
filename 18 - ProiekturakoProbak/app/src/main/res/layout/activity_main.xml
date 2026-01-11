@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
         <LinearLayout
-            android:layout_width="409dp"
-            android:layout_height="729dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:orientation="vertical"
             tools:layout_editor_absoluteX="1dp"
             tools:layout_editor_absoluteY="1dp">
@@ -21,7 +21,8 @@
             <!-- CONTENT -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="662dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
                 android:background="@drawable/Fondo1"
                 android:orientation="vertical">
 
@@ -53,7 +54,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_horizontal">
+                    android:gravity="center">
                     <!-- Contenedor 2 -->
                     <androidx.cardview.widget.CardView
                         android:layout_width="250dp"
@@ -110,11 +111,11 @@
             <!-- DOWN DIVIDER -->
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="31dp"
                 android:background="@color/not_use_space"
                 android:gravity="end"
                 android:orientation="vertical">
 
             </LinearLayout>
         </LinearLayout>
-    </>
+</androidx.constraintlayout.widget.ConstraintLayout>

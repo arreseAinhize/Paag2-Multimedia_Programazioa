@@ -6,22 +6,22 @@
     android:layout_height="match_parent">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
         <!-- UP DIVIDER -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="31dp"
             android:background="@color/not_use_space"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+        </LinearLayout>
 
         <!-- CONTENT -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="662dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@drawable/Fondo1"
             android:orientation="vertical">
 
@@ -74,15 +74,24 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="45dp"
+                                android:gravity="center"
+                                android:text="@string/email"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
 
                             <EditText
                                 android:id="@+id/Username"
-                                android:layout_width="300dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="8dp"
+                                android:layout_marginTop="4dp"
                                 android:layout_marginBottom="4dp"
                                 android:background="@drawable/border"
-                                android:hint="@string/hint_search_book_titel"
+                                android:hint="@string/hint_email"
                                 android:inputType="text" />
 
                         </LinearLayout>
@@ -93,15 +102,23 @@
                             android:layout_height="wrap_content"
                             android:gravity="center"
                             android:orientation="horizontal">
-
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="2dp"
+                                android:layout_marginRight="6dp"
+                                android:gravity="center"
+                                android:text="@string/password"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
                             <EditText
                                 android:id="@+id/Password"
-                                android:layout_width="300dp"
+                                android:layout_width="200dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
                                 android:layout_marginBottom="4dp"
                                 android:background="@drawable/border"
-                                android:hint="@string/hint_search_book_titel"
+                                android:hint="@string/hint_password"
                                 android:inputType="textPassword" />
 
                         </LinearLayout>
@@ -114,26 +131,16 @@
                             android:orientation="horizontal">
 
                             <Button
-                                android:layout_width="300dp"
+                                android:layout_width="170dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="6dp"
+                                android:layout_marginRight="16dp"
                                 android:layout_marginBottom="4dp"
                                 android:backgroundTint="@color/border_blue"
-                                android:text="@string/login_with_google"
-
-                                />
-
-                        </LinearLayout>
-
-                        <!-- Contenedor de Button LogIn -->
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:gravity="center"
-                            android:orientation="horizontal">
+                                android:text="@string/login_with_google"/>
 
                             <Button
-                                android:layout_width="wrap_content"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="6dp"
                                 android:layout_marginBottom="4dp"
@@ -149,7 +156,7 @@
         <!-- DOWN DIVIDER -->
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="31dp"
             android:background="@color/not_use_space"
             android:gravity="end"
             android:orientation="vertical">
